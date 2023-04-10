@@ -107,6 +107,7 @@ export class News extends Component {
         //     console.log("Inside next");
         //     console.log(this.state.page);
         // }
+
         await this.setState({
             page: this.state.page + 1
         })
@@ -132,7 +133,7 @@ export class News extends Component {
         return (
             <div>
                 {/* <div className="container my-3"> */}
-                <h2 className='text-center'>RealNews</h2>
+                <h2 className='text-center'>RealNews here</h2>
                 {this.state.loading && <Loader />}
                 {/* !this.state.loading && */}
                 <InfiniteScroll
